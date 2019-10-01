@@ -1,0 +1,129 @@
+:root {
+    --custom-color-1: #2A2F33;
+    --custom-color-2: #046DD5;
+    --custom-color-3: #F4655F;
+    --section-color-1: #E1493E;
+    --section-color-2: #8ABA56;
+    --section-color-3: #5B4282;
+    --section-color-4: #FF8932;
+    --section-color-5: #19B6E9;
+    --section-color-6: #E84C8B;
+}
+
+body>header {
+    background-color: var(--custom-color-2);
+    padding: 1em;
+    padding-bottom: 1.5em;
+    line-height: 0;
+}
+
+body>header a {
+    font-weight: bold;
+    font-family: "Verdana";
+    color: white;
+    text-decoration: none;
+}
+
+body>header>h1 a {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+body>header>h2 a {
+    font-size: 0.7rem;
+}
+
+#signup>a {
+    font-size: 0.7rem;
+    height: 3em;
+}
+
+
+/*To make the line!*/
+
+#signup a:first-child::after {
+    content: '';
+    margin: 0 1em;
+    border-right: 1px solid white;
+}
+
+#menu>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu>ul>li {
+    border-top: 5px;
+    border-top-style: solid;
+    border-top-color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+#menu>ul>li>a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Verdana";
+    color: var(--custom-color-1);
+}
+
+#menu>ul>li:nth-child(1) {
+    border-top-color: var(--section-color-1);
+}
+
+#menu>ul>li:nth-child(2) {
+    border-top-color: var(--section-color-2);
+}
+
+#menu>ul>li:nth-child(3) {
+    border-top-color: var(--section-color-3);
+}
+
+#menu>ul>li:nth-child(4) {
+    border-top-color: var(--section-color-4);
+}
+
+#menu>ul>li:nth-child(5) {
+    border-top-color: var(--section-color-5);
+}
+
+#menu>ul>li:nth-child(6) {
+    border-top-color: var(--section-color-6);
+}
+
+#related {
+    background-color: var(--custom-color-1);
+    padding: 1em;
+}
+
+#related a {
+    font-weight: bold;
+    font-family: "Verdana";
+    color: white;
+    text-decoration: none;
+}
+
+#related p {
+    font-family: "Georgia";
+    color: white;
+    text-decoration: none;
+}
+
+#news header {
+    position: absolute;
+    padding: 2em;
+    width: 25%;
+}
+
+#news header a {
+    font-family: "Georgia";
+    text-shadow: 7px 4.5px 2px black;
+    color: white;
+    text-decoration: none;
+}
+
+#news img {
+    width: 100%;
+    margin-top: 1em;
+}

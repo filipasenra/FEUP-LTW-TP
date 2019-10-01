@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="form.html" method="get">
+        <fieldset>
+            <legend>Personal data:</legend>
+            <p>Name:
+            <input type="text" name="Name"></p>
+
+            <p>Idade:
+            <input type="radio" name="age" value="1>" checked="checked">&lt;18
+            <input type="radio" name="age" value="2">19-35
+            <input type="radio" name="age" value="3">36-48
+            <input type="radio" name="age" value="3">&gt;49</p>
+
+            <p>Profession: 
+            <input type="text" name="Profession"></p>
+
+            <p>Country:
+                <select name="Country">
+                    <option value="Portugal">Portugal</option>
+                    <option value="Outro">Outro</option>
+                </select> </p>
+
+            <p>Hobbies:
+            <input type="checkbox" name="Interests" value="Coding" checked="checked">Coding
+            <input type="checkbox" name="Interests" value="Sports">Sports
+            <input type="checkbox" name="Interests" value="Reading">Reading</p>
+
+            <p>How did you find this website: 
+            <textarea name="How did you find thsi website" rows="4" cols="50"></textarea></p>
+
+            <input type="submit" value="Send">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
