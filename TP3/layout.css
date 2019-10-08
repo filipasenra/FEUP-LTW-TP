@@ -1,0 +1,61 @@
+body {
+    width: 60em;
+    margin: 0 auto;
+    background-color: #EDEFF0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "header header " "menu sidebar" "main sidebar" "footer sidebar";
+}
+
+#menu>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu ul li {
+    flex-grow: 1;
+}
+
+#signup {
+    position: relative;
+    right: -50em;
+    top: -1.3em;
+}
+
+body header {
+    grid-area: header;
+    height: 3em;
+}
+
+#related {
+    grid-area: sidebar;
+    width: 11em;
+}
+
+#menu {
+    grid-area: menu;
+    background-color: white;
+}
+
+#news {
+    grid-area: main;
+    margin-top: 1em;
+}
+
+#news article {
+    background-color: white;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+body footer {
+    grid-area: footer;
+}
+
+#news article footer .author {
+    float: left;
+}
+
+#news article footer {
+    text-align: right;
+}
