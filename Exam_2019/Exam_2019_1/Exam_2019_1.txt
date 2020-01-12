@@ -1,0 +1,51 @@
+1. a)
+2. b)
+3. a)
+4. c)
+5. a)
+6. b)
+7. c)
+8. c)
+9. b)
+10. a)
+11. a)
+12. c)
+
+===============================
+R(a, b, c, d)
+
+a = InLide
+b = Id 
+c = class, pseudo-class(:), attribute
+d = element, pseudo-element(::)
+
+13. R1(0, 0, 1, 1)
+14. R2(0, 0, 2, 1)
+15. R3(0, 1, 0, 1)
+16. R4(0, 1, 0, 1)
+17. R5(0, 0, 3, 2)
+18. R6(0, 1, 2, 2)
+
+19. Color of the second Element in the List (B) after all rules are applied
+Green -- Yellow -- Purple
+NOTE: R6 doesn't apply to the li because they are not at the same sequence/level (~)
+
+20. A [groundhog would hog all the ground he could hog, if a groundhog could hog g]round
+21. A [groundhog would hog] all the ground he could hog, if a groundhog could hog ground
+22. A groundhog would hog a[ll] the ground he could hog, if a groundhog could hog ground
+23. A groundhog would hog all the [ground] he could hog, if a groundhog could hog ground 
+24. A groundhog would hog all the ground he could hog, if a groundhog could hog [ground]
+If space at the end, nothing is match
+25. A [groundhog would hog all the gro]und he could hog, if a groundhog could hog ground 
+
+
+(The following three questions were not tested)
+26. P26.php
+27. P27.js
+28. P28.js
+
+29. recipes/recipe/ingredients/ingredient/text()
+or 
+//ingredient/text()
+
+30. count(recipes/recipe[name/text()='Mixed Toast']/ingredients/ingredient)
