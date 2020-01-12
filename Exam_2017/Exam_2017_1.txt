@@ -1,0 +1,136 @@
+Part 1
+
+1. b) The section element certo
+2. c) h1 elements inside a header and any h2 elements. certo
+3. a) Memorizing and copying the users session cookie. errado -> d Forcing a user to use a certain session cookie
+4. c) No, because some of the advantages of hashing passwords are lost certo
+5. b) Always certo
+6. c) Becomes available in all the other functions. errado -> d Refers to a global script variable.
+7. c) The current execution context certo
+8. a) Depends on the used axis certo
+
+
+Part 2
+
+R(a, b, c, d)
+a: inline
+b: IDs
+c: Class, Peseudo class (:hover), Attribute(src),
+d: Element, Peseudo Element(::first-line)
+
+class . id # descendant space child > attribute [something]
+
+a) R1(0, 0, 1, 1)
+R2(0, 0, 0, 2)
+R3(0, 1, 1, 2)
+R4(0, 1, 1, 2)
+R5(0, 0, 1, 2)
+R6(0, 0, 0, 3)
+
+b) Buy Bread - Blue (R1)
+Learn Guitar - Cyan (R3)
+Pay Bills - Cyan (R3)
+Wash Car - Cyan (R3)
+
+c) Buy Bread - Blue (R1)
+Learn Guitar - Red (R2)
+Pay Bills - Green (R4)
+Wash Car - Black (R5)
+
+2. 
+a) Washing the [washing machine while watching the washing machine washing washing]
+b) Wash[ing] the washing machine while watching the washing machine washing washing
+c) Wash[ing the washing] machine while watching the washing machine washing washing
+d) [Was]hing the washing machine while watching the washing machine washing washing
+e) Washing the washing ma[ch]ine while watching the washing machine washing washing
+f) W[ashing the wa]shing machine while watching the washing machine washing washing~
+
+NOTES *? -> as few as possible
+      ^ -> beginning of string (white spaces do not count!)
+
+3. No jQuery for us. So let's see it in JS
+
+function incrementTotal(n){
+
+    let divWithProducts = document.getElementById("products");
+    let totalP = divWithProducts.getElementsByTagName("p")[0];
+
+    let totalValue = Number(totalP.innerHTML);
+    totalP.innerHTML = totalValue + n;
+}
+
+let divWithProducts = document.getElementById("products");
+let listWithProducts = divWithProducts.getElementsByTagName("ul")[0];
+
+let items = divWithProducts.getElementsByTagName("li");
+
+for(let i = 0; i < items.length; i++){
+
+    let quantity = items[i].getElementsByTagName("span")[0].innerHTML;
+
+    
+    let aUniquePlusSign = items[i].getElementsByTagName("a")[0];
+
+
+    aUniquePlusSign.onclick = (function(n) {
+       return function(){
+            incrementTotal(n); 
+       }
+    })(Number(quantity));
+}
+
+b) DIDN'T TEST THIS ONE
+
+function updateTotalText(){
+
+    let response = JSON.parse(this.responseText);
+
+    let divWithProducts = document.getElementById("products");
+    let totalP = divWithProducts.getElementsByTagName("p").innerHTML = response; //or innerText
+
+}
+
+function encodeForAjax(data) {
+  return Object.keys(data).map(function(k){
+    return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+  }).join('&')
+}
+
+function makeRequest(){
+
+    let param = [];
+
+    let divWithProducts = document.getElementById("products");
+    let listWithProducts = divWithProducts.getElementsByTagName("ul")[0];
+    let items = divWithProducts.getElementsByTagName("li");
+
+    for(let i = 0; i < items.length; i++){
+
+        let product = items[i].innerText;
+        product = product.substring(0, product.length - 5);
+        let quantity = items[i].getElementsByTagName("span")[0].innerHTML;
+    
+    
+        let newArray = [];
+        newArray["name"] = product; newArray["qty"] = Number(quantity);
+        param.push(newArray);
+
+    }
+
+    let req = new XMLHttpRequest();
+    req.onLoad = updateTotalText;
+    req.open("post", "calculatetotal.php");
+    req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    req.send(encodeForAjax(param));
+
+}
+
+let divWithProducts = document.getElementById("products");
+let buyLink = divWithProducts.getElementsByTagName("a")[0];
+
+buyLink.onclick = makeRequest;
+
+4. a) authors/author/@name
+b) authors/author/book[@type="Novel"]/text()
+c) authors/author[count(book) > 1]/@name
+d) authors/author[book/text()="Ensaio sobre a Cegueira"]/@country
