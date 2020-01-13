@@ -28,7 +28,7 @@ d = element, pseudo-element(::)
 
 19. Color of the second Element in the List (B) after all rules are applied
 Green -- Yellow -- Purple
-NOTE: R6 doesn't apply to the li because they are not at the same sequence/level (~)
+NOTE: R6 doesn't because there isn't any element li that is a (direct) child of #foo
 
 20. A [groundhog would hog all the ground he could hog, if a groundhog could hog g]round
 21. A [groundhog would hog] all the ground he could hog, if a groundhog could hog ground
