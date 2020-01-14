@@ -1,0 +1,69 @@
+Part 1
+
+1. a) <article class="important">...</article>
+2. d) Cross-Site Scripting
+3. c) Rainbow Tables
+4. a) Files on the server
+5. 10 
+(NOTE: No error is found. The $foo variable used in the function is 
+a local variable to the function, so it doesn't relate to the foo in the
+script. If it was declared in the function that foo was global, than the 
+output would have been 15).
+6. If not used with a ready event handler,
+the code can be executed before the pages loads.
+Therefore, some elements used by the code
+may not exists yet.
+7. HTTP is a stateless protocol because the session state is kept 
+entirely on the client. All the necessary information to understand 
+the request is send by the client. Each request is executed independently
+without any knowledge of the requests that were executed before it. So no
+state is stored on the server.
+8. a) Generate XML files
+
+
+Part 2
+
+1. R(a, b, c, d)
+a: inline
+b: ids
+c: class, content-class(:), attributes
+d: element, content-element(::)
+
+a) 
+R1(0, 0, 0, 2)
+R2(0, 0, 0, 2)
+R3(0, 0, 2, 1)
+R4(0, 0, 0, 2)
+R5(0, 1, 0, 1)
+R6(0, 0, 1, 0)
+
+b) R1 to R3
+Title: Browser Default
+1st Par: Red(R1) -- Blue(R2) -- Green(R3)
+2nd Par: Red(R1) -- Blue(R2)
+Footer: Red(R1) -- Green(R3)
+
+c) All Rules
+Title: Cyan
+1st Par: Red(R1) -- Blue(R2)
+2nd Par: Red(R1) -- Blue(R2) -- yellow(R4)
+Footer: Red(R1) -- Green(R3)
+
+NOTE: R3 doesn't apply to 1st Par because :first-child means 
+its the first element regardless of type. The <p> before just declares
+that the first element must be of type <p>. So R3 doesn't mean first-element
+of type <p>. It means the select the first element and that element must
+be of type <p>.
+
+2.
+a) Peter Piper [picked a peck of pick]led peppers.
+b) Peter Piper p[ick]ed a peck of pickled peppers.
+c) Peter Piper picked a peck of pickled peppers. 
+NOTE: note that the . is alone (only one character) 
+(I ignored the plus at the end)
+d) Peter Piper picked a pe[ck] of pickled peppers.
+e) Peter Piper picked a peck of [pick]led peppers.
+f) Peter Piper picked a peck of pickled pep[per]s.
+
+3. a) P3a.js Tested
+b) P3b.js Tested except makeRequest
