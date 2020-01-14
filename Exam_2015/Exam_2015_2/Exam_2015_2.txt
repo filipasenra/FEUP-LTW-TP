@@ -1,0 +1,58 @@
+Part 1
+
+1. b) <article><header><h1>T´ıtulo</h1></header>...</article>
+2. d) Cross-Site Request Forgery
+3. a) Use slow hashing functions
+4. c) if ($pos === false) echo "Not found";
+5. 1, 2, 3, 4
+6. ---
+7. The side effects of multiple requests of idempotent methods are the same as a single request.
+8. --
+
+Part 2
+
+1. R(a, b, c, d)
+a: inline
+b: ids,
+c: class, pseudo-class(:), attribute
+d: element, pseudo-element(::)
+
+a) 
+R1(0, 0, 1, 0)
+R2(0, 0, 0, 2)
+R3(0, 1, 1, 1)
+R4(0, 0, 1, 1)
+R5(0, 1, 0, 1)
+R6(0, 1, 1, 1)
+
+b) R1 to R3
+Two Lists: Default Browser
+1st First: Blue (R1)
+2nd Second: Green (R2)
+Third: Yellow (R3)
+
+c) All
+Two Lists: Default Browser
+1st First: Blue (R1) -- Magenta(R4) -- Cyan (R6)
+2nd Second: Green (R2)
+Third: Yellow (R3) -- Cyan (R6)
+
+NOTE: R5 doesn't apply because the default color of a is not inhered 
+
+2. 
+a) The thirty-three thieves thought that they thril[led the throne
+thro]ughout Thursday.
+b) The [thirty]-three thieves thought that they thrilled the throne
+throughout Thursday.
+c) The thirty-three thieves thought that they thrilled the throne 
+throughout Thursday. 
+NOTE: Look at the position of the parenthesis 
+d) The thirty-three thieves thought that they thri[lled the throne] 
+throughout Thursday.
+e) The thirty-[thr]ee thieves thought that they thrilled the throne 
+throughout Thursday.
+f) The thirty-three thieves thought that they thrilled the throne 
+thr[o]ughout Thursday.
+
+3. a) P3a.js Tested
+b) P3b.js Semi-tested
