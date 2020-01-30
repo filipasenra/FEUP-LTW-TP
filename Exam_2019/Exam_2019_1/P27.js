@@ -1,4 +1,4 @@
-function loadGame(id) {
+function loadGame() {
 
     let data = JSON.parse(this.responseText);
 
@@ -20,9 +20,8 @@ let objectWithId = document.getElementById("tic-tac-toe");
 let id = objectWithId.getAttributeNode("data-id").value;
 
 let req = new XMLHttpRequest();
-req.onLoad = function() {
-    loadGame(id);
-}
+req.onLoad = loadGame
+
 req.open("post", "play.php");
 req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 req.send(encodeForAjax({ id: id }));
