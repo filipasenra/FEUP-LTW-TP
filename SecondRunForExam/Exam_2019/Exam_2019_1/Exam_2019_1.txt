@@ -44,10 +44,10 @@ with die or exit.
 
 The token is generated and stored on the server (in SESSION)
 Then is put (hidden) in a form request
-Finally, the server conforms if the token on the server equals the token 
+Finally, the server confirms if the token on the server equals the token 
 received from the browser.
 
-12. b)
+12. c)
 
 Remember, rainbow tables store hash's of the most common passwords.
 If we use a different salt for each password, than the hash in a rainbow 
