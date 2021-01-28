@@ -2,7 +2,7 @@
 Exercises and Exams solutions for the LTW curricular unit.
 
 ## Project Infos
-* Date: 3nd Year, 1st Semester, 2019/2020
+* Date: 3rd Year, 1st Semester, 2019/2020
 * Course: Linguagens e Tecnologias Web (LTW) | Web Languages and Technologies
 * Course Link: https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=281471
 
