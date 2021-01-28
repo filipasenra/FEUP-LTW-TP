@@ -1,5 +1,5 @@
 # FEUP-LTW-TP
-Exercises and Exams solutions for the AEDA curricular unit.
+Exercises and Exams solutions for the LTW curricular unit.
 
 ## Project Infos
 * Date: 3nd Year, 1st Semester, 2019/2020
